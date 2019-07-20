@@ -4,8 +4,19 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            @if(count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+                @endforeach
+                </ul>
+            </div>
+            @endif
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <div class="card card-header text-center bg-gradient-success">
+                        <h1 class="h4 text-gray-900 mb-4">{{ __('REINITIALISER LE MOT DE PASSE') }}</h1>
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,14 +25,14 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="{{ route('password.email') }}">
+                    <form class="user" method="POST" action="{{ route('password.email') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Addresse E-Mail') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" placeholder="Votre adresse e-mail" value="{{ old('email') }}" autocomplete="email" autofocus>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -30,14 +41,16 @@
                                 @enderror
                             </div>
                         </div>
-
+{{--  
                         <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">  --}}
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
+                                <button type="submit" class="btn btn-primary btn-user btn-block"><i class="fas fa-paper-plane"></i>&nbsp;
+                                    {{ __('Envoyer le lien') }}
                                 </button>
                             </div>
-                        </div>
+                           {{--   </div>
+                        </div>  --}}
                     </form>
                 </div>
             </div>
