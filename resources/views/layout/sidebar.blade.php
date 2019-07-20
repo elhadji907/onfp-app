@@ -86,6 +86,15 @@
       <a class="collapse-item" href="{{ route('register') }}">{{ __("S'inscrire") }}</a>
       @endif
       @else
+      <a class="collapse-item" href="#">COURRIER</a>
+      <a class="collapse-item" href="#">DAF</a>
+      <a class="collapse-item" href="#">CG</a>
+      <a class="collapse-item" href="#">AC</a>
+      <a class="collapse-item" href="#">COM</a>
+      <a class="collapse-item" href="#">URD</a>      
+      <a class="collapse-item" href="#">EDITION</a>
+      <a class="collapse-item" href="#">CONSTRUCTION</a>
+
       {{-- 
       <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
       <div class="collapse-divider"></div>
