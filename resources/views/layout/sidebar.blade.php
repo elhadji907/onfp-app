@@ -18,7 +18,7 @@
     <i class="fas fa-fw fa-tachometer-alt"></i>
     <span>Tableau de bord</span></a>
 </li>
-
+{{--  
 <!-- Divider -->
 <hr class="sidebar-divider">
 
@@ -26,8 +26,8 @@
 <div class="sidebar-heading">
   Interface
 </div>
-
-<!-- Nav Item - Pages Collapse Menu -->
+  --}}
+{{--  <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
     <i class="fas fa-fw fa-cog"></i>
@@ -40,8 +40,8 @@
       <a class="collapse-item" href="cards.html">Cards</a>
     </div>
   </div>
-</li>
-
+</li>  --}}
+{{--  
 <!-- Nav Item - Utilities Collapse Menu -->
 <li class="nav-item">
   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
@@ -57,16 +57,16 @@
       <a class="collapse-item" href="utilities-other.html">Other</a>
     </div>
   </div>
-</li>
+</li>  --}}
 
 <!-- Divider -->
 <hr class="sidebar-divider">
-
+{{--  
 <!-- Heading -->
 <div class="sidebar-heading">
   Addons
 </div>
-
+  --}}
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
@@ -87,6 +87,9 @@
       @endif
       @else
       <a class="collapse-item" href="#">COURRIER</a>
+      <a class="collapse-item" href="#">DIOF</a>
+      <a class="collapse-item" href="#">DEC</a>
+      <a class="collapse-item" href="#">DPP</a>
       <a class="collapse-item" href="#">DAF</a>
       <a class="collapse-item" href="#">CG</a>
       <a class="collapse-item" href="#">AC</a>
@@ -94,6 +97,7 @@
       <a class="collapse-item" href="#">URD</a>      
       <a class="collapse-item" href="#">EDITION</a>
       <a class="collapse-item" href="#">CONSTRUCTION</a>
+      <a class="collapse-item" href="#">ANTENNES</a>
 
       {{-- 
       <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
