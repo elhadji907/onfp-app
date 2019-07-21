@@ -28,7 +28,7 @@
 
 </head>
 
-<body id="page-top">
+<body>
 
 {{--   <!-- Page Wrapper --> --}}
   <div id="wrapper">
