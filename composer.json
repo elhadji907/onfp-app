@@ -12,7 +12,11 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
+<<<<<<< HEAD
         "reliese/laravel": "^0.0.13"
+=======
+        "spatie/laravel-permission": "^2.37"
+>>>>>>> 17788ecb79c8572e2c08f924d8ad48ad787ffb35
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
